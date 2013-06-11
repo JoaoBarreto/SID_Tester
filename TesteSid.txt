@@ -1,0 +1,8 @@
+"Your application is being deployed in a load-balanced web farm. The load balancer is not set up for user server affinity. Rather, it routes requests to servers based on their load. Your application uses session state. How should you configure the SessionState mode attribute? (Choose two.)"
+[Off,InProc,SqlServer<Correct>,StateServer<Correct>,]
+"You need to store a user's user name and password as he or she navigates to different pages on your site, so that you can pass those credentials to the server. Which type of state management should you use?"
+[Client-side state management,Server-side state management<Correct>,]
+"Which of the following are accessibility features provided by ASP.NET? (Choose two.)"
+[Controls that include a list of links at the top provide hidden links to skip over the links. <Correct>,Controls display text in large font sizes by default.,Controls provide properties that enable you to  provide hidden descriptions that are available to screen readers.<Correct>,Controls are displayed in high contrast by default.,]
+"You need to programmatically configure page output caching. Which object would you use?"
+[Response<Correct>,Server,Application,Request,]
