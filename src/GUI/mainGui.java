@@ -78,14 +78,11 @@ public class mainGui {
 	
 	private void buildTestSystem() {
 		openFile();
-		//chooseMod();
 		testeSid = new Test(numeroDePerguntas , path);
 		testeSid.initTestBatterie();
 		getNextQuestion();
 	}
 	
-	
-
 	/**
 	 * Initialize the contents of the frame.
 	 */
