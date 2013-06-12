@@ -48,7 +48,7 @@ public class mainGui {
 	private boolean respostaCorrectaFlag;
 	private int respostasCorrectas = 0;
 	private boolean modoAprendizagem = false;
-	private String versionControl = "SID Test Simulator V.1\nIGE 11-06-2013\nDeveloped by: Joï¿½o Barreto\nwww.joaobarreto.pt";
+	private String versionControl = "SID Test Simulator V.1\nIGE 11-06-2013\nDeveloped by: João Barreto\nwww.joaobarreto.pt";
 	private String title = "While True Systems - SID Test Simulator V.1";
 	private String helpModeState = "On";
     
@@ -78,18 +78,21 @@ public class mainGui {
 	
 	private void buildTestSystem() {
 		openFile();
+		//chooseMod();
 		testeSid = new Test(numeroDePerguntas , path);
 		testeSid.initTestBatterie();
 		getNextQuestion();
 	}
 	
+	
+
 	/**
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
 		windowFrame = new JFrame();
 		windowFrame.setResizable(false);
-		windowFrame.setTitle(title + " " + " - Pergunta nï¿½ " + contadorDePerguntas + "/");
+		windowFrame.setTitle(title + " " + " - Pergunta nº " + contadorDePerguntas + "/");
 		windowFrame.setBounds(100, 100, 770, 397);
 		windowFrame.setLocationRelativeTo(null);
 		windowFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -158,6 +161,7 @@ public class mainGui {
 		
 		pn_checkboxes = new JPanel();
 		pn_checkboxes.setLayout(new javax.swing.BoxLayout(pn_checkboxes, javax.swing.BoxLayout.Y_AXIS));
+		//pn_checkboxes.setAlignmentX(Component.LEFT_ALIGNMENT);
 		pn_checkboxes.setBounds(25, 181, 700, 125);
 		
 		JButton btnNewButton = new JButton("Next question");
@@ -198,7 +202,7 @@ public class mainGui {
 		pn_checkboxes.updateUI();
 		
 		lb_infoPergunta.setText("Pergunta n\u00BA: " + contadorDePerguntas + "/" + numeroDePerguntas);
-		windowFrame.setTitle(title + " - Pergunta nï¿½ " + contadorDePerguntas);
+		windowFrame.setTitle(title + " - Pergunta nº " + contadorDePerguntas);
 		
 		QuestionAnswer newQuestionAndAnswer = testeSid.getListOfQuestions().get(contadorDePerguntas-1);
 		lb_pergunta.setText(newQuestionAndAnswer.getQuestion());
@@ -263,17 +267,18 @@ public class mainGui {
 	}
 	
 	private void imprimeRespostas() {
-		System.out.println("-------------- PERGUNTA nï¿½ " +  contadorDePerguntas + " ---------------------------");
+		System.out.println("-------------- PERGUNTA nº " +  contadorDePerguntas + " ---------------------------");
 		for(String s : listOfCorrectAnswers)				
 			System.out.println("Resposta(s) correcta(s): " + s);
 		System.out.println("--------------------------------------------------------");
 	}
 	
 	private void testResult() {
+		String tempString = respostasCorrectas + ".";
 		if(respostasCorrectas >= 10)
-			JOptionPane.showMessageDialog(null, "Parabï¿½ns! Tiveste " + trespostasCorrectas + ".";
+			JOptionPane.showMessageDialog(null, "Parabéns! Tiveste " + tempString);
 		else
-			JOptionPane.showMessageDialog(null, "Bad luck... tiveste " + respostasCorrectas + ".");
+			JOptionPane.showMessageDialog(null, "Bad luck... tiveste " + tempString);
 		System.exit(0);
 	}
 	

@@ -4,15 +4,9 @@
 `---'`---'`---^`---'    `---'`---^`    `    `---'`---'`---'
 -------------------------------------------------------------------------------
 
-Esta aplicacao serve para todos os alunos do ISCTE que queiram testar os seus
-conhecimentos na cadeira de Sistemas de Informatica Distribuidos.
+Esta aplicação serve para todos os alunos do ISCTE que queiram testar os seus
+conhecimentos na cadeira de Sistemas de Informação Distribuidos.
 
-Boa sorte para a frequencia! \(^.^)/
-
-How to:
-1Âº - ir a linha de comandos -> "java -jar SIDTester.jar"
-2Âº - apos o programa arrancar devem indicar onde estÃ¡ o ficheiro TesteSID.txt
-3Âº - No menu FILE tÃªm lÃ¡ uma opcao Help Mode. ;) have fun.
-
+Boa sorte para a frequência! \(^.^)/
 
 ------------------------------ [WWW.JOAOBARRETO.PT] ---------------------------
